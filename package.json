@@ -1,0 +1,15 @@
+{
+  "name": "nuxt-time",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "traitify-widgets": "^1.12.19"
+  }
+}
