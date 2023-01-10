@@ -1,14 +1,21 @@
 <template>
   <div>
-    <h1>Hello world!</h1>
-    <div class="widget"></div>
+    <h1>Hello</h1>
+    <div id="shadow"></div>
   </div>
 </template>
 
 <script>
   export default {
     mounted() {
-      this.$traitify.render(".widget");
+      const shadow = document.querySelector("#shadow").attachShadow({mode: "open"});
+      const element = document.createElement("div");
+      const style = [...document.querySelectorAll("style")].find((e) => e.textContent.includes("traitify"));
+
+      shadow.appendChild(element);
+      shadow.appendChild(style);
+
+      this.$traitify.render(element);
     }
   }
 </script>
