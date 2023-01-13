@@ -1,5 +1,8 @@
 export default {
   build: {
+    babel: {
+      plugins: ["transform-unicode-regexp-runtime"]
+    },
     transpile: ["traitify-widgets"]
   },
   plugins: [

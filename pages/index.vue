@@ -8,14 +8,7 @@
 <script>
   export default {
     mounted() {
-      const shadow = document.querySelector("#shadow").attachShadow({mode: "open"});
-      const element = document.createElement("div");
-      const style = [...document.querySelectorAll("style")].find((e) => e.textContent.includes("traitify"));
-
-      shadow.appendChild(element);
-      shadow.appendChild(style);
-
-      this.$traitify.render(element);
+      this.$traitify.render("#shadow");
     }
   }
 </script>
